@@ -1,0 +1,23 @@
+/* Resetiranje osnovnih margina i postavljanje box-sizing na border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiliziranje body elementa da osigura da canvas pokriva cijeli prozor */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #020320; /* Pozadina web stranice */
+}
+
+/* Stiliziranje canvas elementa */
+#gameCanvas {
+    display: block; /* Uklanja bilo kakve margine ispod canvasa */
+    border: 5px solid #fff; /* Bijeli rub za kontrast na crnoj pozadini */
+    width: 100vw;
+    height: 100vh;
+}
